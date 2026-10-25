@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CONFLUYE · Personas que se encuentran. Bienestar que se construye.</title>
+  <meta name="description" content="CONFLUYE es un emprendimiento social de consultoría, formación y acompañamiento en bienestar humano, emocional y social para personas, familias, instituciones educativas, organizaciones y comunidades.">
+  <meta name="theme-color" content="#F8F6F1">
+  <!-- REEMPLAZAR: dominio definitivo -->
+  <link rel="canonical" href="https://www.confluye.com/">
+
+  <!-- Open Graph / redes sociales (REEMPLAZAR dominio en las URLs absolutas) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_LA">
+  <meta property="og:site_name" content="CONFLUYE">
+  <meta property="og:title" content="CONFLUYE · Personas que se encuentran. Bienestar que se construye.">
+  <meta property="og:description" content="Consultoría, formación e intervención en bienestar humano y colectivo.">
+  <meta property="og:url" content="https://www.confluye.com/">
+  <meta property="og:image" content="https://www.confluye.com/assets/img/logo_confluye.jpeg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="559">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400..800&display=swap">
+  <link rel="preload" as="image" href="assets/img/logo-mark.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+    // Oculta los elementos animables antes del primer pintado; si GSAP no llega, se muestran igual.
+    (function (d) {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) return;
+      d.documentElement.classList.add('js-anim');
+      window.__animFallback = setTimeout(function () {
+        window.__animFallbackFired = true;
+        d.documentElement.classList.remove('js-anim');
+      }, 4000);
+    })(document);
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CONFLUYE",
+    "slogan": "Personas que se encuentran. Bienestar que se construye.",
+    "description": "Emprendimiento social que promueve el bienestar integral de personas y colectivos mediante consultoría, acompañamiento, formación e intervención especializada.",
+    "url": "https://www.confluye.com/",
+    "logo": "https://www.confluye.com/assets/img/logo-mark.jpg",
+    "image": "https://www.confluye.com/assets/img/logo_confluye.jpeg",
+    "email": "hola@confluye.com",
+    "knowsAbout": ["Bienestar emocional", "Bienestar organizacional", "Bienestar comunitario", "Habilidades socioemocionales", "Convivencia escolar", "Clima organizacional"],
+    "sameAs": ["https://www.instagram.com/confluye", "https://www.linkedin.com/company/confluye"]
+  }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+  <div class="halo" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="CONFLUYE, ir al inicio">
+        <img class="brand__mark" src="assets/img/logo-mark.jpg" alt="" width="40" height="40">
+        <span class="brand__name">Confluye</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#enfoque">Enfoque</a></li>
+          <li><a class="nav__link" href="#dimensiones">Dimensiones</a></li>
+          <li><a class="nav__link" href="#publicos">Públicos</a></li>
+          <li><a class="nav__link" href="#servicios">Servicios</a></li>
+          <li><a class="nav__link" href="#proceso">Proceso</a></li>
+          <li><a class="nav__link" href="#impacto">Impacto</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#contacto">Conversemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__blob hero__blob--a" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--b" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow" data-hero>Emprendimiento social · Bienestar humano y colectivo</p>
+          <h1 class="hero__title" id="hero-title">
+            Personas que se encuentran. <em>Bienestar que se construye.</em>
+          </h1>
+          <p class="hero__lead" data-hero>
+            Consultoría, formación y acompañamiento para que personas, familias, equipos, instituciones y comunidades construyan relaciones y entornos más saludables.
+          </p>
+          <div class="hero__actions" data-hero>
+            <a class="btn btn--primary" href="#contacto">Conversemos</a>
+            <a class="btn btn--ghost" href="#concepto">Descubre Confluye</a>
+          </div>
+          <ul class="hero__facts" data-hero>
+            <li><strong>6</strong> dimensiones del bienestar</li>
+            <li><strong>5</strong> públicos y ámbitos</li>
+            <li><strong>8</strong> modalidades de servicio</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <svg class="streams" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="g-teal" gradientUnits="userSpaceOnUse" x1="-300" y1="960" x2="134" y2="466">
+                <stop offset="0" stop-color="#2E6B70" stop-opacity="0"/>
+                <stop offset="1" stop-color="#2E6B70"/>
+              </linearGradient>
+              <linearGradient id="g-peach" gradientUnits="userSpaceOnUse" x1="-120" y1="-520" x2="239" y2="73">
+                <stop offset="0" stop-color="#E9A27C" stop-opacity="0"/>
+                <stop offset="1" stop-color="#E9A27C"/>
+              </linearGradient>
+              <linearGradient id="g-green" gradientUnits="userSpaceOnUse" x1="1160" y1="240" x2="503" y2="417">
+                <stop offset="0" stop-color="#6E9E5B" stop-opacity="0"/>
+                <stop offset="1" stop-color="#6E9E5B"/>
+              </linearGradient>
+            </defs>
+            <g class="streams__paths">
+              <path class="stream" stroke="url(#g-teal)" d="M-300 960C-100 860 260 620 134 466A235 235 0 0 1 134 134"/>
+              <path class="stream" stroke="url(#g-peach)" d="M-120-520C-60-260 40 105 239 73A235 235 0 0 1 527 361"/>
+              <path class="stream" stroke="url(#g-green)" d="M1160 240C920 220 640 180 503.5 417.5A235 235 0 0 1 182.5 503.5"/>
+            </g>
+            <g class="streams__dots">
+              <circle class="dot" cx="40" cy="250" r="7" fill="#2E6B70"/>
+              <circle class="dot" cx="110" cy="40" r="5" fill="#E9A27C"/>
+              <circle class="dot" cx="560" cy="150" r="8" fill="#6E9E5B"/>
+              <circle class="dot" cx="585" cy="420" r="5" fill="#2E6B70"/>
+              <circle class="dot" cx="430" cy="585" r="7" fill="#E9A27C"/>
+              <circle class="dot" cx="60" cy="470" r="5" fill="#6E9E5B"/>
+              <circle class="dot" cx="330" cy="12" r="4" fill="#4A8C8F"/>
+              <circle class="dot" cx="200" cy="590" r="4" fill="#A8CC94"/>
+            </g>
+          </svg>
+          <div class="hero__logo">
+            <img src="assets/img/logo-mark.jpg" width="640" height="640" fetchpriority="high"
+                 alt="Logotipo de CONFLUYE: tres corrientes de personas diversas que se entrelazan en un círculo">
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#concepto" data-hero>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+        <span>Desliza</span>
+      </a>
+    </section>
+
+    <!-- ============ CONCEPTO ============ -->
+    <section class="section concept" id="concepto" aria-labelledby="concept-title">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Concepto</p>
+        <h2 class="sr-only" id="concept-title">Qué es CONFLUYE</h2>
+        <p class="concept__manifesto" data-manifesto>
+          CONFLUYE es un espacio de encuentro humano donde las personas, sus emociones, relaciones y experiencias se convierten en punto de partida para construir <em>bienestar individual y colectivo.</em>
+        </p>
+
+        <ul class="keywords">
+          <li class="keyword keyword--teal" data-reveal>
+            <span class="keyword__term">Confluye</span>
+            <span class="keyword__desc">Encuentro, conexión, interacción, comunidad.</span>
+          </li>
+          <li class="keyword keyword--peach" data-reveal>
+            <span class="keyword__term">Personas</span>
+            <span class="keyword__desc">Rostro humano, historias, emociones, diversidad.</span>
+          </li>
+          <li class="keyword keyword--green" data-reveal>
+            <span class="keyword__term">Bienestar</span>
+            <span class="keyword__desc">El propósito que nos mueve.</span>
+          </li>
+          <li class="keyword keyword--ink" data-reveal>
+            <span class="keyword__term">Se construye</span>
+            <span class="keyword__desc">Acción colectiva, transformación y participación.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ENFOQUE DIFERENCIAL ============ -->
+    <section class="enfoque" id="enfoque" aria-labelledby="enfoque-title">
+      <div class="container enfoque__inner">
+        <div class="enfoque__intro">
+          <p class="eyebrow eyebrow--light" data-reveal>Enfoque diferencial</p>
+          <h2 class="section-title section-title--light" id="enfoque-title" data-split>El bienestar también se vive en colectivo</h2>
+          <p class="enfoque__text" data-reveal>
+            No entendemos el bienestar solo como responsabilidad de cada persona. Conectamos lo individual, lo relacional y lo colectivo, y por eso también nos preguntamos:
+          </p>
+          <ol class="enfoque__dots" aria-hidden="true">
+            <li></li><li></li><li></li><li></li>
+          </ol>
+        </div>
+
+        <ul class="questions">
+          <li class="question"><span class="question__num">01</span>¿Cómo se siente un grupo?</li>
+          <li class="question"><span class="question__num">02</span>¿Cómo se relacionan sus integrantes?</li>
+          <li class="question"><span class="question__num">03</span>¿Qué emociones circulan dentro de una organización o comunidad?</li>
+          <li class="question"><span class="question__num">04</span>¿Qué favorece o deteriora su pertenencia, confianza, cohesión y bienestar?</li>
+        </ul>
+      </div>
+      <p class="container enfoque__outro" data-reveal>
+        Así diseñamos intervenciones que no trabajan con individuos aislados, sino con los entornos sociales que influyen en sus experiencias y comportamientos.
+      </p>
+    </section>
+
+    <!-- ============ DIMENSIONES ============ -->
+    <section class="section dimensions" id="dimensiones" aria-labelledby="dim-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Propuesta de valor</p>
+          <h2 class="section-title" id="dim-title" data-split>Seis dimensiones que confluyen en un bienestar integral</h2>
+          <p class="section-lead" data-reveal>
+            Cada intervención comprende cómo las experiencias personales se relacionan con los entornos donde las personas viven, estudian, trabajan y participan.
+          </p>
+        </div>
+
+        <div class="dimensions__layout">
+          <figure class="flower" aria-hidden="true">
+            <svg viewBox="0 0 400 400" focusable="false">
+              <g class="flower__petals">
+                <circle class="petal" data-angle="-90"  cx="200" cy="130" r="82" fill="#2E6B70"/>
+                <circle class="petal" data-angle="-30"  cx="260.6" cy="165" r="82" fill="#E9A27C"/>
+                <circle class="petal" data-angle="30"   cx="260.6" cy="235" r="82" fill="#6E9E5B"/>
+                <circle class="petal" data-angle="90"   cx="200" cy="270" r="82" fill="#4A8C8F"/>
+                <circle class="petal" data-angle="150"  cx="139.4" cy="235" r="82" fill="#F2BC98"/>
+                <circle class="petal" data-angle="210"  cx="139.4" cy="165" r="82" fill="#A8CC94"/>
+              </g>
+              <g class="flower__center">
+                <circle cx="200" cy="200" r="52" fill="#F8F6F1"/>
+                <text x="200" y="195" text-anchor="middle">Bienestar</text>
+                <text x="200" y="216" text-anchor="middle">integral</text>
+              </g>
+            </svg>
+          </figure>
+
+          <ul class="cards">
+            <li class="card" data-reveal style="--accent: var(--teal-700); --accent-soft: var(--teal-100)">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+              <h3 class="card__title">Bienestar personal</h3>
+              <p>Autoconocimiento, habilidades socioemocionales, desarrollo personal y calidad de vida.</p>
+            </li>
+            <li class="card" data-reveal style="--accent: var(--peach-700); --accent-soft: var(--peach-100)">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg></span>
+              <h3 class="card__title">Bienestar relacional</h3>
+              <p>Comunicación, vínculos, convivencia, confianza y manejo constructivo de conflictos.</p>
+            </li>
+            <li class="card" data-reveal style="--accent: var(--green-700); --accent-soft: var(--green-100)">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="10" r="2.5"/><circle cx="19" cy="10" r="2.5"/><path d="M7 20c.6-3 2.6-5 5-5s4.4 2 5 5M1.5 18c.4-2 1.7-3.4 3.5-3.4M22.5 18c-.4-2-1.7-3.4-3.5-3.4"/></svg></span>
+              <h3 class="card__title">Bienestar grupal</h3>
+              <p>Cohesión, identidad, pertenencia, colaboración y dinámicas emocionales de los grupos.</p>
+            </li>
+            <li class="card" data-reveal style="--accent: var(--teal-700); --accent-soft: var(--teal-100)">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="8.5" y="14" width="7" height="7" rx="2"/><path d="M6.5 10v2h11v-2M12 12v2"/></svg></span>
+              <h3 class="card__title">Bienestar organizacional</h3>
+              <p>Clima, cultura, relaciones laborales, liderazgo, motivación y desarrollo de equipos.</p>
+            </li>
+            <li class="card" data-reveal style="--accent: var(--peach-700); --accent-soft: var(--peach-100)">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span>
+              <h3 class="card__title">Bienestar comunitario</h3>
+              <p>Participación, vínculos comunitarios, integración, confianza social y capacidades colectivas.</p>
+            </li>
+            <li class="card" data-reveal style="--accent: var(--green-700); --accent-soft: var(--green-100)">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 5c3-1 7-1 10 1 3-2 7-2 10-1v14c-3-1-7-1-10 1-3-2-7-2-10-1z"/><path d="M12 6v14"/></svg></span>
+              <h3 class="card__title">Bienestar educativo</h3>
+              <p>Desarrollo socioemocional, convivencia y relaciones sanas entre estudiantes, docentes y familias.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PÚBLICOS ============ -->
+    <section class="section audiences" id="publicos" aria-labelledby="aud-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Públicos y ámbitos</p>
+          <h2 class="section-title" id="aud-title" data-split>Programas para cada etapa de la vida y cada espacio social</h2>
+        </div>
+
+        <div class="tabs" data-reveal>
+          <div class="tabs__list" role="tablist" aria-label="Públicos">
+            <button class="tabs__tab" role="tab" id="tab-ninos" aria-controls="panel-ninos" aria-selected="true">Niños y adolescentes</button>
+            <button class="tabs__tab" role="tab" id="tab-jovenes" aria-controls="panel-jovenes" aria-selected="false" tabindex="-1">Jóvenes</button>
+            <button class="tabs__tab" role="tab" id="tab-adultos" aria-controls="panel-adultos" aria-selected="false" tabindex="-1">Adultos</button>
+            <button class="tabs__tab" role="tab" id="tab-org" aria-controls="panel-org" aria-selected="false" tabindex="-1">Organizaciones y equipos</button>
+            <button class="tabs__tab" role="tab" id="tab-com" aria-controls="panel-com" aria-selected="false" tabindex="-1">Comunidades</button>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-ninos" aria-labelledby="tab-ninos" tabindex="0" style="--accent: var(--peach-500)">
+            <div class="panel__intro">
+              <h3>Niños y adolescentes</h3>
+              <p>Crecer con herramientas para comprender lo que sienten y convivir mejor con los demás.</p>
+            </div>
+            <ul class="panel__list">
+              <li>Desarrollo de habilidades socioemocionales</li>
+              <li>Convivencia y relaciones saludables</li>
+              <li>Prevención de situaciones de violencia y exclusión</li>
+              <li>Fortalecimiento de la autoestima y habilidades sociales</li>
+              <li>Programas para familias y comunidades educativas</li>
+            </ul>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-jovenes" aria-labelledby="tab-jovenes" tabindex="0" hidden style="--accent: var(--green-500)">
+            <div class="panel__intro">
+              <h3>Jóvenes</h3>
+              <p>Acompañar la construcción de un proyecto propio y del lugar que ocupan en su entorno.</p>
+            </div>
+            <ul class="panel__list">
+              <li>Desarrollo personal y proyecto de vida</li>
+              <li>Habilidades para la vida</li>
+              <li>Relaciones interpersonales</li>
+              <li>Participación social y sentido de pertenencia</li>
+              <li>Bienestar en espacios educativos y laborales</li>
+            </ul>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-adultos" aria-labelledby="tab-adultos" tabindex="0" hidden style="--accent: var(--teal-500)">
+            <div class="panel__intro">
+              <h3>Adultos</h3>
+              <p>Recursos para atravesar los cambios de la vida y cuidar los vínculos que la sostienen.</p>
+            </div>
+            <ul class="panel__list">
+              <li>Bienestar personal y relacional</li>
+              <li>Gestión de cambios vitales</li>
+              <li>Desarrollo de habilidades socioemocionales</li>
+              <li>Relaciones familiares y sociales</li>
+              <li>Programas de bienestar y calidad de vida</li>
+            </ul>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-org" aria-labelledby="tab-org" tabindex="0" hidden style="--accent: var(--teal-700)">
+            <div class="panel__intro">
+              <h3>Organizaciones y equipos</h3>
+              <p>El bienestar como parte de la cultura y la gestión, no como una actividad aislada.</p>
+            </div>
+            <ul class="panel__list">
+              <li>Diagnóstico de bienestar y clima</li>
+              <li>Fortalecimiento de equipos</li>
+              <li>Comunicación y relaciones interpersonales</li>
+              <li>Liderazgo y cultura organizacional</li>
+              <li>Prevención de factores que deterioran el bienestar</li>
+              <li>Diseño de estrategias y programas de bienestar</li>
+            </ul>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-com" aria-labelledby="tab-com" tabindex="0" hidden style="--accent: var(--green-700)">
+            <div class="panel__intro">
+              <h3>Comunidades y colectivos sociales</h3>
+              <p>Procesos participativos para identificar necesidades y construir respuestas en conjunto.</p>
+            </div>
+            <ul class="panel__list">
+              <li>Diagnóstico de dinámicas sociales y relacionales</li>
+              <li>Fortalecimiento de vínculos comunitarios</li>
+              <li>Participación y cohesión social</li>
+              <li>Identidad y sentido de pertenencia</li>
+              <li>Diseño de proyectos de bienestar colectivo</li>
+              <li>Procesos participativos para construir soluciones</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="services" id="servicios" aria-labelledby="serv-title">
+      <div class="services__viewport">
+        <div class="container services__head">
+          <div>
+            <p class="eyebrow" data-reveal>Modalidades de servicio</p>
+            <h2 class="section-title" id="serv-title" data-split>Un modelo flexible, adaptado a cada grupo</h2>
+          </div>
+          <div class="services__progress" aria-hidden="true"><span></span></div>
+        </div>
+
+        <ol class="services__track">
+          <li class="service" data-reveal>
+            <span class="service__num">01</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg></span>
+            <h3>Consultorías especializadas</h3>
+            <p>Análisis de necesidades y diseño de soluciones personalizadas.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">02</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+            <h3>Diagnósticos de bienestar</h3>
+            <p>Identificación de factores individuales, relacionales, grupales y organizacionales asociados al bienestar.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">03</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></span>
+            <h3>Talleres y experiencias formativas</h3>
+            <p>Actividades presenciales o virtuales dirigidas a diferentes públicos.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">04</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/></svg></span>
+            <h3>Programas de intervención</h3>
+            <p>Procesos de acompañamiento de mediano o largo plazo.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">05</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></span>
+            <h3>Capacitación</h3>
+            <p>Formación de docentes, líderes, equipos, profesionales y agentes comunitarios.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">06</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span>
+            <h3>Investigación aplicada</h3>
+            <p>Estudios sobre bienestar, emociones, relaciones y dinámicas sociales.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">07</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12C12 8 9 5 4 5c0 4 3 7 8 7z"/><path d="M12 14c0-3 2.5-6 8-6 0 4-3 6-8 6z"/></svg></span>
+            <h3>Diseño de proyectos sociales</h3>
+            <p>Formulación de iniciativas orientadas al bienestar de comunidades y grupos específicos.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num">08</span>
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></span>
+            <h3>Acompañamiento a organizaciones</h3>
+            <p>Asesoría para desarrollar políticas, programas y estrategias de bienestar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section process" id="proceso" aria-labelledby="proc-title">
+      <div class="container process__layout">
+        <div class="process__head">
+          <p class="eyebrow" data-reveal>Cómo trabajamos</p>
+          <h2 class="section-title" id="proc-title" data-split>Conocimiento científico y metodologías participativas</h2>
+          <p class="section-lead" data-reveal>
+            Integramos aportes de las ciencias sociales, la psicología, la educación y la gestión de personas para traducirlos en soluciones prácticas.
+          </p>
+        </div>
+
+        <div class="steps-wrap">
+        <span class="steps__line" aria-hidden="true"><span class="steps__fill"></span></span>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <span class="step__num">01</span>
+            <h3>Escuchar y diagnosticar</h3>
+            <p>Comprendemos al grupo, su contexto y las emociones, vínculos y dinámicas que influyen en su bienestar.</p>
+          </li>
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <span class="step__num">02</span>
+            <h3>Diseñar en conjunto</h3>
+            <p>Construimos con las personas una estrategia a la medida de sus necesidades y características.</p>
+          </li>
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <span class="step__num">03</span>
+            <h3>Intervenir y acompañar</h3>
+            <p>Talleres, formación, programas y acompañamiento para hacer del bienestar una práctica cotidiana.</p>
+          </li>
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <span class="step__num">04</span>
+            <h3>Evaluar y sostener</h3>
+            <p>Medimos los cambios y dejamos capacidades instaladas para que el bienestar siga construyéndose.</p>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IMPACTO ============ -->
+    <section class="section impact" id="impacto" aria-labelledby="imp-title">
+      <div class="container impact__layout">
+        <figure class="ripples" aria-hidden="true">
+          <svg viewBox="0 0 440 440" focusable="false">
+            <g class="ripples__pulse">
+              <circle cx="220" cy="220" r="210"/>
+              <circle cx="220" cy="220" r="210"/>
+              <circle cx="220" cy="220" r="210"/>
+            </g>
+            <circle class="ring" data-level="5" cx="220" cy="220" r="205" fill="#E3EFDB"/>
+            <circle class="ring" data-level="4" cx="220" cy="220" r="165" fill="#DCEBEA"/>
+            <circle class="ring" data-level="3" cx="220" cy="220" r="125" fill="#FBE7DA"/>
+            <circle class="ring" data-level="2" cx="220" cy="220" r="85"  fill="#F2BC98"/>
+            <circle class="ring" data-level="1" cx="220" cy="220" r="45"  fill="#2E6B70"/>
+          </svg>
+        </figure>
+
+        <div>
+          <p class="eyebrow" data-reveal>Impacto social esperado</p>
+          <h2 class="section-title" id="imp-title" data-split>Como una onda: del yo al nosotros</h2>
+          <ol class="levels">
+            <li class="level" data-level="1" data-reveal>
+              <h3>Individual</h3>
+              <p>Personas con más recursos para comprenderse, relacionarse y afrontar desafíos.</p>
+            </li>
+            <li class="level" data-level="2" data-reveal>
+              <h3>Relacional</h3>
+              <p>Vínculos más saludables y mejores capacidades de comunicación y convivencia.</p>
+            </li>
+            <li class="level" data-level="3" data-reveal>
+              <h3>Grupal</h3>
+              <p>Equipos y colectivos con más cohesión, confianza, participación y pertenencia.</p>
+            </li>
+            <li class="level" data-level="4" data-reveal>
+              <h3>Organizacional</h3>
+              <p>Instituciones que incorporan el bienestar en su cultura y su gestión.</p>
+            </li>
+            <li class="level" data-level="5" data-reveal>
+              <h3>Comunitario</h3>
+              <p>Comunidades capaces de identificar sus necesidades, fortalecer sus vínculos y construir respuestas colectivas.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROPÓSITO ============ -->
+    <section class="purpose" aria-labelledby="purpose-title">
+      <svg class="purpose__streams" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <path stroke="#4A8C8F" d="M-40 420C240 300 420 520 720 400S1200 220 1480 320"/>
+        <path stroke="#E9A27C" d="M-40 200C260 300 480 120 760 240S1220 420 1480 260"/>
+        <path stroke="#6E9E5B" d="M-40 520C300 460 520 300 820 340S1240 520 1480 460"/>
+      </svg>
+      <div class="container purpose__inner">
+        <p class="eyebrow eyebrow--light" data-reveal>Propósito</p>
+        <h2 class="sr-only" id="purpose-title">Nuestro propósito</h2>
+        <blockquote class="purpose__quote" data-split>
+          Contribuir a sociedades más saludables, cohesionadas y humanas, generando espacios para el desarrollo personal, las relaciones sanas, la convivencia y el sentido de pertenencia.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__layout">
+        <div class="contact__info">
+          <p class="eyebrow" data-reveal>Contacto</p>
+          <h2 class="section-title" id="contact-title" data-split>Construyamos bienestar juntos</h2>
+          <p class="section-lead" data-reveal>
+            Cuéntanos sobre tu institución, equipo, comunidad o proyecto. Diseñamos una propuesta a la medida de sus necesidades.
+          </p>
+
+          <!-- REEMPLAZAR: datos de contacto reales -->
+          <ul class="contact__list" data-reveal>
+            <li>
+              <span class="contact__label">Correo</span>
+              <a href="mailto:hola@confluye.com">hola@confluye.com</a>
+            </li>
+            <li>
+              <span class="contact__label">WhatsApp</span>
+              <a href="https://wa.me/000000000000" target="_blank" rel="noopener">+00 000 000 0000</a>
+            </li>
+            <li>
+              <span class="contact__label">Ubicación</span>
+              <span>Tu ciudad, País · Atención presencial y virtual</span>
+            </li>
+          </ul>
+          <ul class="social" data-reveal>
+            <li><a href="https://www.instagram.com/confluye" target="_blank" rel="noopener" aria-label="Instagram de CONFLUYE">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/company/confluye" target="_blank" rel="noopener" aria-label="LinkedIn de CONFLUYE">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a></li>
+            <li><a href="https://www.facebook.com/confluye" target="_blank" rel="noopener" aria-label="Facebook de CONFLUYE">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <!-- REEMPLAZAR: TU_ID_FORMSPREE por el ID de tu formulario en formspree.io -->
+        <form class="form" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST" novalidate data-reveal>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Nombre</label>
+              <input id="f-name" name="nombre" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Correo electrónico</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-err">
+              <p class="field__error" id="f-email-err"></p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-org">Organización <span class="field__opt">(opcional)</span></label>
+              <input id="f-org" name="organizacion" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="f-type">¿Para quién es?</label>
+              <select id="f-type" name="publico" required aria-describedby="f-type-err">
+                <option value="">Selecciona una opción</option>
+                <option>Niños y adolescentes</option>
+                <option>Jóvenes</option>
+                <option>Adultos</option>
+                <option>Familias</option>
+                <option>Institución educativa</option>
+                <option>Organización o equipo de trabajo</option>
+                <option>Comunidad o colectivo social</option>
+                <option>Otro</option>
+              </select>
+              <p class="field__error" id="f-type-err"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Mensaje</label>
+            <textarea id="f-msg" name="mensaje" rows="5" required minlength="10" aria-describedby="f-msg-err"></textarea>
+            <p class="field__error" id="f-msg-err"></p>
+          </div>
+          <!-- Honeypot anti-spam: los humanos no lo ven -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-hp">No llenar</label>
+            <input id="f-hp" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn btn--primary form__submit" type="submit">
+            <span class="form__submit-label">Enviar mensaje</span>
+          </button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="#top" aria-label="CONFLUYE, volver al inicio">
+          <img class="brand__mark" src="assets/img/logo-mark.jpg" alt="" width="40" height="40" loading="lazy">
+          <span class="brand__name">Confluye</span>
+        </a>
+        <p>Personas que se encuentran.<br>Bienestar que se construye.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <ul class="footer__nav">
+          <li><a href="#concepto">Concepto</a></li>
+          <li><a href="#enfoque">Enfoque</a></li>
+          <li><a href="#dimensiones">Dimensiones</a></li>
+          <li><a href="#publicos">Públicos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> CONFLUYE · Emprendimiento social</p>
+      <a href="#top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
+</body>
+</html>
